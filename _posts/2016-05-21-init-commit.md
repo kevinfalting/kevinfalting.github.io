@@ -1,7 +1,7 @@
 ---
+title: Init Commit
+date: '2016-05-21 00:00:00'
 layout: post
-title:  "Init Commit"
-date:   2016-05-21
 categories: first
 ---
 
