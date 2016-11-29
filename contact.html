@@ -1,0 +1,36 @@
+---
+title: Contact
+layout: page
+permalink: "/contact/"
+---
+
+<p>This form won't actually contact me, it is a part of the final project for a class. It will not submit any data to anything. It makes use of client side validation and a nifty javascript function that keeps the data on-screen after "submitting" it.</p>
+
+<!-- I don't actually have a website to submit to, so I figured I'd keep the one from our homework. -->
+<form action="http://www.thespicebowlcorp.com/cgi-bin/payment" method="post">
+
+    <fieldset id="contact">
+		<legend>Contact Information</legend>
+
+		<label for="fName">First Name</label>
+		<input type="text" id="fName" required="required">
+
+		<label for="lName">Last Name</label>
+		<input type="text" id="lName" required="required">
+
+		<label for="email">Email</label>
+		<input type="email" id="email">
+
+		<label for="phone">Phone</label>
+		<input type="text" id="phone" pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" required="required">
+	</fieldset>
+
+	<fieldset id="info">
+		<legend>Message</legend>
+
+		<label for="notes">Write your message here:</label>
+		<textarea id="notes" required="required"></textarea>
+	</fieldset>
+
+	<input type="submit" value="Submit Message" class="submit">
+</form>

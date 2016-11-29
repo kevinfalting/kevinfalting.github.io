@@ -1,0 +1,136 @@
+/*
+Author: Kevin Falting
+Date:	20161129
+
+Dependencies
+	go.png
+	stop.png
+*/
+
+.projects {
+  padding-top: 20px;
+}
+
+.profile-image {
+	margin-left: 25%;
+	width: 50%;
+	height: auto;
+}
+
+.about-info {
+	margin: 2em;
+}
+
+.fa-twitter {
+	color: black;
+}
+
+.fa-twitter:hover {
+	color:#55acee;
+}
+
+.fa-facebook {
+	color: black;
+}
+
+.fa-facebook:hover {
+	color:#3b5998;
+}
+
+.fa-lastfm {
+	color: black;
+}
+
+.fa-lastfm:hover {
+	color: #d51007;
+}
+
+.fa-github {
+	color: black;
+}
+
+.fa-github:hover {
+	color: #333333;
+}
+
+.fa-spotify {
+	color: black;
+}
+
+.fa-spotify:hover {
+	color: #2ebd59;
+}
+
+.fa-amazon {
+	color: black;
+}
+
+.fa-amazon:hover {
+	color: #ff9900;
+}
+
+/*Styling for all textarea elements*/
+textarea {
+	display: block;
+	float: left;
+	font-size: 0.9em;
+	height: 75px;
+	width: 60%;
+}
+
+/*Styling for all input elements*/
+input {
+	display: block;
+	float: left;
+	font-size: 0.9em;
+	margin: 2px;
+}
+
+/*Styling for all labels elements*/
+label {
+	display: block;
+	clear: left;
+	float: left;
+	font-size: 0.8em;
+	text-align: right;
+	margin: 2px 5px;
+	width: 25%;
+}
+
+/*Styling for the class submit*/
+.submit {
+	background-color: white;
+	float: none;
+	width: 150px;
+	height: 30px;
+	margin: 10px auto;
+	border-radius: 15px;
+}
+
+.submit:active {
+	background-color: #2a7ae2;
+}
+
+/*Styling for input, select, and textarea elements under focus*/
+input:focus:not(.submit), select:focus {
+	background-color: rgb(255, 198, 145);
+}
+
+/*Styling for input elements that are in focus and the data is invalid*/
+input:focus:invalid {
+	background: rgb(255, 245, 215) url('../../images/stop.png') bottom right no-repeat;
+
+	-o-background-size: contain;
+	-moz-background-size: contain;
+	-webkit-background-size: contain;
+	background-size: contain;
+}
+/*Styling for input elements that are in focus and the data is valid*/
+input:focus:valid:not(.submit) {
+	background: rgb(215, 255, 215) url('../../images/go.png') bottom right no-repeat;
+
+	-o-background-size: contain;
+	-moz-background-size: contain;
+	-webkit-background-size: contain;
+	background-size: contain;
+}

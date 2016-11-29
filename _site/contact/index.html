@@ -6,13 +6,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Portfolio</title>
+  <title>Contact</title>
   <meta name="description" content="Building community, writing software, and always learning.
 ">
 
   <!-- Jekyll Responsive CSS -->
   <link rel="stylesheet" href="../../../css/jekyll.css">
-  <link rel="canonical" href="http://localhost:4000/portfolio/">
+  <link rel="canonical" href="http://localhost:4000/contact/">
 
   <!-- Font Awesome CSS -->
   <link rel="stylesheet" type="text/css" href="../../../fonts/css/font-awesome.min.css">
@@ -94,50 +94,41 @@
 
 	
 		<header class="post-header">
-			<h1 class="post-title">Portfolio</h1> 
+			<h1 class="post-title">Contact</h1> 
 		</header>
 	
 
 	<div class="post-content">
-		<div>
-  <hr>
-  <div class="projects">
-    <h3>Wichitalks</h3>
-    <a href="http://wichitalks.com" target="_blank"><img src="../images/wichitalks.jpg" alt="Wichitalks Banner" class="project-image"></a>
-    <p>
-      A community driven speaking event based on the format of 20 slides auto-advancing every 15 seconds. Wichitalks was founded on January 1st, 2016 after reading <a href="http://www.startuprev.com/category/communities/" target="_blank">Startup Communities</a> by Brad Feld, and in response to the desire to connect many of the vibrant and passionate subcommunities within Wichita.<br><br>
+		<p>This form won't actually contact me, it is a part of the final project for a class. It will not submit any data to anything. It makes use of client side validation and a nifty javascript function that keeps the data on-screen after "submitting" it.</p>
 
-      If you'd like to help support the website, you can find more information at <a href="https://github.com/Wichitalks/wichitalks.github.io" target="_blank">Github</a>.
-    </p>
-  </div>
-  <hr>
-  <div class="projects">
-    <h3>Megaphone</h3>
-    <p>
-      A Rails idea sharing and discussion platform, similar to <a href="https://news.ycombinator.com/" target="_blank">Hacker News</a>. This application is being built with the help of <a href="https://openwichita.com/" target="_blank">Open Wichita</a> in response to requests for something that could plug into current sites to act as a way to submit ideas.<br><br>
+<!-- I don't actually have a website to submit to, so I figured I'd keep the one from our homework. -->
+<form action="http://www.thespicebowlcorp.com/cgi-bin/payment" method="post">
 
-      If you'd like to help support the project, checkout the <a href="https://github.com/openwichita/megaphone" target="_blank">Github Project</a> page.
-    </p>
-  </div>
-  <hr>
-  <div class="projects">
-    <h3>Cristin Hancox Photography</h3>
-    <p>
-      A Jekyll website built for Cristin Hancox to support her photography. I utilized the <a href="http://arkadianriver.github.io/spectral/" target="_blank">Spectral Theme</a> to help build the site.<br><br>
+    <fieldset id="contact">
+		<legend>Contact Information</legend>
 
-      If you'd like to see the code, checkout the <a href="https://github.com/cristinhancoxphotography/cristinhancoxphotography.github.io" target="_blank">Github</a> page.
-    </p>
-  </div>
-  <hr>
-  <div class="projects">
-    <h3>Pacerr</h3>
-    <p>
-      An iOS app built in Swift to help pace a run by generating a virtual pacer and providing feedback as to your position relative to the virtual pacer. Since it was made, new versions of Swift have been released and broken the code in this app. I intend to remake this app using <a href="https://cordova.apache.org/">Cordova</a> so that it is easier to maintain and can be deployed to different mobile platforms.<br><br>
+		<label for="fName">First Name</label>
+		<input type="text" id="fName" required="required">
 
-      If you'd like to see the code, checkout the <a href="https://github.com/kevinfalting/GetLocation" target="_blank">Github</a> page.
-    </p>
-  </div>
-</div>
+		<label for="lName">Last Name</label>
+		<input type="text" id="lName" required="required">
+
+		<label for="email">Email</label>
+		<input type="email" id="email">
+
+		<label for="phone">Phone</label>
+		<input type="text" id="phone" pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" required="required">
+	</fieldset>
+
+	<fieldset id="info">
+		<legend>Message</legend>
+
+		<label for="notes">Write your message here:</label>
+		<textarea id="notes" required="required"></textarea>
+	</fieldset>
+
+	<input type="submit" value="Submit Message" class="submit">
+</form>
 	</div>
 
 </article>

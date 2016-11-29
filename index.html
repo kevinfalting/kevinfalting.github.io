@@ -4,19 +4,21 @@ layout: default
 ---
 
 <div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
+  <p>Hey,</p>
+  <p><span class="indent"></span>I'm Kevin and I'm learning about web development right now. This is a personal site that I've built for a final project in one of my classes. I wrote a post about the project titled "Final Project Description." Check it out if you want to know more. For now, this site is a static website with no server side business logic. What I mean is that this website isn't dynamically served depending on who's accessing it. Everyone sees the same site.</p>
+  <p><span class="indent"></span>Anyways, I hope you enjoy looking around. It was fun building this site. Hopefully it gets me a good grade.</p>
+  <p>*crosses fingers*</p>
+  <hr>
+  <br>
+  <h1 class="page-heading">Latest Musing</h1>
   <ul class="post-list">
-    {% for post in site.posts %}
+    {% for post in site.posts limit:1 %}
       <li>
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
         <h2>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </h2>
       </li>
     {% endfor %}
   </ul>
-
 </div>
