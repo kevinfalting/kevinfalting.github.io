@@ -168,3 +168,32 @@ input {
 .indent {
 	margin-left: 1.8em;
 }
+
+.java {
+	color: #5382A1;
+}
+
+.html {
+	color: #e34f26;
+}
+
+.css {
+	color: blue;
+}
+
+.coffeescript {
+	color: black;
+}
+
+.elixir {
+	color: purple;
+}
+
+.swift {
+	color: orange;
+}
+
+.ruby {
+	color: #cc342d;
+}
+
