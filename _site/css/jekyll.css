@@ -70,7 +70,7 @@ a {
   text-decoration: none; }
   a:visited {
     color: #1756a9; }
-  a:hover {
+  a:hover:not(.footer-col a) {
     color: #111;
     text-decoration: underline; }
 

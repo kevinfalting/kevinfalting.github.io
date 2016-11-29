@@ -98,7 +98,7 @@ a {
         color: darken($brand-color, 15%);
     }
 
-    &:hover {
+    &:hover:not(.footer-col a) {
         color: $text-color;
         text-decoration: underline;
     }
