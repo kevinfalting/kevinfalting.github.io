@@ -6,26 +6,25 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Contact</title>
-  <meta name="description" content="Building community, writing software, and always learning.
-">
+  <title>Init Commit</title>
+  <meta name="description" content="I’ve finally converted my site over to github pages from squarespace! I was paying some stupid amount of money to keep it there and now I can completely cust...">
 
   
   <!-- Jekyll Responsive CSS -->
-  <link rel="stylesheet" href="../css/jekyll.css">
+  <link rel="stylesheet" href="../../../css/jekyll.css">
 
   <!-- Font Awesome CSS -->
-  <link rel="stylesheet" type="text/css" href="../fonts/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="../../../fonts/css/font-awesome.min.css">
 
   <!-- Custom CSS -->
-  <link rel="stylesheet" type="text/css" href="../css/style.css">
+  <link rel="stylesheet" type="text/css" href="../../../css/style.css">
   
   <!-- Form Submit javascript from Tutorial 6 Case Problem 2 -->
-  <script src="../js/formsubmit.js" type="text/javascript"></script>
+  <script src="../../../js/formsubmit.js" type="text/javascript"></script>
   
 
 
-  <link rel="canonical" href="http://localhost:4000/contact/">
+  <link rel="canonical" href="http://localhost:4000/2016/05/21/init-commit.html">
 
   <!-- Google Analytics --> <!-- Yep, learning some google analytics -->
   <script>
@@ -65,19 +64,11 @@
           
         
           
-          <a class="page-link" href="/contact/">Contact</a>
-          
-        
-          
         
           
         
           
           <a class="page-link" href="/portfolio/">Portfolio</a>
-          
-        
-          
-          <a class="page-link" href="/resume/">Resume</a>
           
         
           
@@ -94,46 +85,23 @@
 
     <div class="page-content">
       <div class="wrapper">
-        <article class="post">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
-	
-		<header class="post-header">
-			<h1 class="post-title">Contact</h1> 
-		</header>
-	
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">Init Commit</h1>
+    <p class="post-meta"><time datetime="2016-05-21T00:00:00+03:00" itemprop="datePublished">May 21, 2016</time></p>
+  </header>
 
-	<div class="post-content">
-		<p>This form won't actually contact me, it is a part of the final project for a class. It will not submit any data to anything. It makes use of client side validation and a nifty javascript function that keeps the data on-screen after "submitting" it.</p>
+  <div class="post-content" itemprop="articleBody">
+    <p>I’ve finally converted my site over to github pages from squarespace! I was paying some stupid amount of money to keep it there and now I can completely customize my site. I’ve built it using <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> and hosted it using <a href="https://pages.github.com/" target="_blank">Github Pages</a> with absolutely no cost. This was an awesome learning experience and will continue to be as I get better. However, I’m sure that my website here will remain pretty simple.</p>
 
-<!-- I don't actually have a website to submit to, so I figured I'd keep the one from our homework. -->
-<form action="http://www.thespicebowlcorp.com/cgi-bin/payment" method="post">
+<p>I’ve never had a website that I could post whatever I like on, so here goes!</p>
 
-    <fieldset id="contact">
-		<legend>Contact Information</legend>
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>git commit -m <span class="s2">"init commit"</span>
+</code></pre>
+</div>
 
-		<label for="fName">First Name</label>
-		<input type="text" id="fName" required="required">
-
-		<label for="lName">Last Name</label>
-		<input type="text" id="lName" required="required">
-
-		<label for="email">Email</label>
-		<input type="email" id="email">
-
-		<label for="phone">Phone</label>
-		<input type="text" id="phone" pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" required="required">
-	</fieldset>
-
-	<fieldset id="info">
-		<legend>Message</legend>
-
-		<label for="notes">Write your message here:</label>
-		<textarea id="notes" required="required"></textarea>
-	</fieldset>
-
-	<input type="submit" value="Submit Message" class="submit">
-</form>
-	</div>
+  </div>
 
 </article>
 

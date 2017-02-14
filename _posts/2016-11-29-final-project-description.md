@@ -22,3 +22,5 @@ According to the final project specs given to us to build our site, the followin
 I've pulled in a few outside resources like [Font Awesome](http://fontawesome.io/){:target="_blank"} and the Jekyll CSS Framework for some responsive classes to sprinkle into the code.
 
 That's not too bad, hopefully this site works to satisfy all of the requirements for this final project.
+
+EDIT - I scored a perfect grade on this assignment, and since I personally don't want a website that has all of these requirements, I've removed them from the site. It was a cool project and I'll continue to use and update this site as I feel necessary.
