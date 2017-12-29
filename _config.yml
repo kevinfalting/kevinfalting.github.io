@@ -12,10 +12,14 @@ description: > # this means to ignore newlines until "baseurl:"
   Building community, writing software, and always learning.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://kevinfalting.com" # the base hostname & protocol for your site
+
+# Social
 twitter:  FaltingKevin
 github:   kevinfalting
 facebook: kevin.falting.5
+instagram: kevinfalting
 lastfm:   kevinfalting1
+linkedin: kevin-falting-33981313a
 spotify:  kevinfalting
 
 # Build settings

@@ -2,7 +2,6 @@
 title: Final Project Description
 date: '2016-11-29 00:00:00'
 layout: post
-depth: 3
 ---
 
 I'm taking a course through Southwestern College called Hypertext Markup Language Programming, and this website is being built for the purpose of satisfying the final project requirements.  

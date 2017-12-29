@@ -2,7 +2,6 @@
 title: Binaural Audio
 date: '2016-11-29 00:00:00'
 layout: post
-depth: 3
 ---
 
 I've been taking time to close my eyes and attempt to experience the world around me through what I can hear, and it's been a pretty awesome experience. If you're in an area that there is a lot a varying activity and texture, the soundscape paints a rather beautiful audio image. You can direct the attention of your ears in certain directions, single out sounds, or just listen to the ensemble as a whole. This is a very cool and meditative activity.

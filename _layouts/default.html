@@ -1,20 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
   {% include head.html %}
-
-  <body>
-
-    {% include header.html %}
-
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
+  <body class="default">
+    <div class="filter container-fluid">
+      {% include nav.html %}
+      {{ content }}
+      {% include footer.html %}
+      {% include scripts.html %}
     </div>
-
-    {% include footer.html %}
-
   </body>
-
 </html>

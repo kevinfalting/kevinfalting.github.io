@@ -1,0 +1,18 @@
+---
+---
+@charset "utf-8";
+
+$filter: rgba(197, 197, 197, 0.774);
+$primary-color: white;
+$secondary-color: black;
+
+
+
+
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+        "mixin",
+        "base",
+        "socialIcons"
+;

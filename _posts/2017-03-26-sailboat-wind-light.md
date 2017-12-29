@@ -2,7 +2,6 @@
 title: Sailboat, Wind, Light
 date: '2017-03-26 00:00:00'
 layout: post
-depth: 3
 ---
 
 I woke with my socks still on, rocking gently in my berth. The light was low enough that it wasn't painful and I could hear the clanking of the sheets against the aluminum mast.
@@ -31,10 +30,6 @@ Note to self: check solar cell.
 
 Leaning back, I reach into a locker and pull out a thick case. It opens just like the day I bought it.
 
-<br><br>
-
-***
-
-<br><br>
+<hr>
 
 I was graciously invited to join some writers at a social writing meetup earlier. We followed the Ray Bradbury method where we quickly jotted down 10 nouns, selected 3 that stuck out to us, and then wrote on one of them for thirty minutes. (I misunderstood and thought I had to write with all three, whoops!) This is the unedited, raw, original writing that came out of the session. I recieved some good feedback about some of the decisions and writing style of this peice. They are internalized and will help with future writing. Also, this gave me an opportunity to write with my new fountain pen. This was fun, I'd like to do it again. <a target="_blank" href="https://www.meetup.com/Wichita-Writers-Coffee-Social/">Writer's Coffee Social</a>
