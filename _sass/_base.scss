@@ -67,3 +67,34 @@ body {
     background-color: $filter-2;
     padding: 1em;
 }
+
+.filter-dark {
+    background-color: $filter-dark;
+}
+
+.project {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border-radius: 2px;
+
+    .text {
+        padding-top: 1em;
+        padding-bottom: 1em;
+
+        .tech {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            li {
+                display: inline-block;
+                padding: 0 0.5em;
+                font-size: 0.75em;
+            }
+        }
+    }
+
+    img {
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+}

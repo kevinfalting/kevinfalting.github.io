@@ -15,3 +15,7 @@ spotify:    kevinfalting
 
 # Build settings
 markdown: kramdown
+
+# Collections
+collections:
+- portfolio
