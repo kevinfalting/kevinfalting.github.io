@@ -49,6 +49,10 @@ body {
     margin-top: 1em;
     color: $primary-color;
 
+    img {
+        text-align: center;
+    }
+
     a {
         text-decoration: none;
         color: $secondary-color;
