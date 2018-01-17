@@ -17,7 +17,7 @@ layout: default
 
     {% capture text %}
     <div class="text col col-md-7">
-        <h2 class="title">{{ project.title }}</h3>
+        <h2 class="title"><a href="{{ project.site }}">{{ project.title }}</a></h3>
         <p class="content">{{ project.content }}</p>
         <ul class="tech">{% for tech in project.tech %}<li>{{ tech }}</li>{% endfor %}</ul>
     </div>
