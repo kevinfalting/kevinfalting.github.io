@@ -108,3 +108,21 @@ body {
         color: $primary-color;
     }
 }
+
+blockquote {
+    padding-left: 2em;
+
+    a {
+        text-decoration: none;
+        color: $secondary-color;
+
+        &:hover {
+            color: $primary-color;
+            text-decoration: none;
+        }
+    }
+}
+
+#foot-text {
+    font-size: 0.8em;
+}
