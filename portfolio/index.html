@@ -2,68 +2,28 @@
 layout: default
 ---
 
-<div class="portfolio container">
-    {% assign bool = true %}
-
-    {% for project in site.portfolio %}
-
-    {% capture image %}
-    <div class="image col-12 col-md-5">
-        <a href="{{ project.site }}">
-            <img src="{{ site.url }}/images/projects/{{ project.img }}" class="img-fluid">
-        </a>
+<div class="container portfolio">
+    <div class="row">
+        <div class="col col-md-6">
+            <div class="item">
+                <h5><a href="https://frontiersinflight.com/">Frontiers In Flight</a></h5>
+                <p>Lead Developer</p>
+                <p>The 2018 McConnell AFB open house air show.</p>
+            </div>
+            <div class="item">
+                <h5><a href="https://wichitalks.com">Wichitalks</a></h5>
+                <p>Founder & Director, Lead Developer</p>
+                <p>A lightning talk TED-like event.</p>
+            </div>
+            <div class="item">
+                <h5><a href="https://btzcalculator.com">BTZ Calculator</a></h5>
+                <p>Lead Developer</p>
+                <p>A projected rank calculator for the USAF.</p>
+            </div>
+            <div class="item">
+                <h5><a href="https://github.com/kevinfalting">Check out my Github</a></h5>
+                <p>A portfolio of my open source projects.</p>
+            </div>
+        </div>
     </div>
-    {% endcapture %}
-
-    {% capture text %}
-    <div class="text col col-md-7">
-        <h2 class="title"><a href="{{ project.site }}">{{ project.title }}</a></h3>
-        <p class="content">{{ project.content }}</p>
-        <ul class="tech">{% for tech in project.tech %}<li>{{ tech }}</li>{% endfor %}</ul>
-    </div>
-    {% endcapture %}
-
-    <div class="row filter-dark project">
-        {% if bool %}
-            {{ image }}
-            {{ text }}
-            {% assign bool = false %}
-        {% else %}
-            {{ text }}
-            {{ image }}
-            {% assign bool = true %}
-        {% endif %}
-    </div>
-
-    {% endfor %}
 </div>
-
-<script>
-    const mq = window.matchMedia( "(min-width: 500px)" );
-    
-    // media query event handler
-    if (matchMedia) {
-        const mq = window.matchMedia("(min-width: 768px)");
-        mq.addListener(WidthChange);
-        WidthChange(mq);
-    }
-
-    // media query change
-    function WidthChange(mq) {
-
-        var imageElements = document.getElementsByClassName("image");
-
-        if (mq.matches) {
-            // window width is more than 500px
-            for (let i = 0; i < imageElements.length; i++) {
-                imageElements[i].classList.remove("order-first");;
-            }
-
-        } else {
-            // window width is less than 500px
-            for (let i = 0; i < imageElements.length; i++) {
-                imageElements[i].classList.add("order-first");;
-            }
-        }
-    }
-</script>

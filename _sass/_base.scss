@@ -3,7 +3,7 @@ body {
 }
 
 .landing {
-    @include background-image();
+    // @include background-image();
 
     p {
         font-size: 1.1em;
@@ -76,33 +76,6 @@ body {
     background-color: $filter-dark;
 }
 
-.project {
-    margin-top: 1em;
-    margin-bottom: 1em;
-    border-radius: 2px;
-
-    .text {
-        padding-top: 1em;
-        padding-bottom: 1em;
-
-        .tech {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            li {
-                display: inline-block;
-                padding: 0 0.5em;
-                font-size: 0.75em;
-            }
-        }
-    }
-
-    img {
-        padding-top: 1em;
-        padding-bottom: 1em;
-    }
-}
-
 .title {
     a {
         color: $primary-color;
@@ -111,18 +84,29 @@ body {
 
 blockquote {
     padding-left: 2em;
+}
 
-    a {
+#contact a {
+    // text-decoration: underline $primary-color;
+    color: $secondary-color;
+
+    &:hover {
+        color: $primary-color;
         text-decoration: none;
-        color: $secondary-color;
-
-        &:hover {
-            color: $primary-color;
-            text-decoration: none;
-        }
     }
 }
 
 #foot-text {
     font-size: 0.8em;
+}
+
+.portfolio {
+    .item {
+        padding-bottom: 2em;
+    }
+    p, h5 {
+        color: $secondary-color;
+        padding: 0;
+        margin: 0;
+    }
 }
