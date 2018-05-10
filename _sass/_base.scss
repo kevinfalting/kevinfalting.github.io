@@ -101,8 +101,14 @@ blockquote {
 }
 
 .portfolio {
-    .item {
-        padding-bottom: 2em;
+    .item div {
+        margin-bottom: 2em;
+
+        &:hover {
+            h5 {
+                color: $primary-color;
+            }
+        }
     }
     p, h5 {
         color: $secondary-color;
