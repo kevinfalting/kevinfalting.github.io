@@ -78,7 +78,7 @@ theme = "LoveIt"
       # URL of avatar shown in home page
       avatarURL = "/images/avatar.png"
       # subtitle shown in home page
-      subtitle = "Software Developer"
+      subtitle = "Software Developer @ 1Password"
       # whether to use typeit animation for subtitle
       typeit = true
       # whether to show social links
