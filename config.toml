@@ -247,7 +247,7 @@ theme = "LoveIt"
 
   # site verification code for Google/Bing/Yandex/Pinterest/Baidu
   [params.verification]
-    google = ""
+    google = "UA-79593612-1"
     bing = ""
     yandex = ""
     pinterest = ""
