@@ -1,4 +1,0 @@
-This is a Brave Rewards publisher verification file.
-
-Domain: kevinfalting.com
-Token: 0bb3f9284eab790997530b248c71986e29d9bdb899aeae3fc76be2063808ddf5
