@@ -12,16 +12,6 @@ const (
 )
 ```
 
-or using iota. (no, stop it)
-
-```go
-const (
-  Active = iota + 1
-  Deleted
-  Pending
-)
-```
-
 A ticket then comes in that says a deleted user should not be able to perform some action. It's simple to take that at face value and write the following conditional which does exactly what the ticket says: deny deleted users.
 
 ```go
