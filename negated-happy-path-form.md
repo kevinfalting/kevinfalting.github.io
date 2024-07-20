@@ -50,73 +50,11 @@ Depending on the complexity of the expression, I may go between the second and t
 ```go
 isThis := a && b
 isThat := c && d
-if !(isThis || isThat) {}
-```
-
-Stop here, I believe I've made my point. It's a simple change and we're just getting progressively more silly from this point on.
-
----
-
-There's still a scoping problem where more variables have been added to the local scope. Maybe we can use an arbitrary smaller scope within the larger scope.
-
-```go
-// this is fine if it can make it past the _"what empty braces? gross!"_ in code review.
-func Do() {
-  {
-    isThis := a && b
-    isThat := c && d
-    if !(isThis || isThat) {}
-  }
+if !(isThis || isThat) {
+  return
 }
 ```
 
-That's kinda ugly though.
+The point is to build the happy path expression and negate it. Think _"what condition(s) need to be true in order for execution to proceed?"_, then wrap that whole thing in parenthesis and negate it.
 
-What's more ugly, you ask?
-
-```go
-if isThis, isThat := a && b, c && d; !(isThis || isThat) {}
-```
-
-At least it's scoped properly...
-
-What about:
-
-```go
-thisOrThat := func() (bool, bool) {
-  isThis := a && b
-  isThat := c && d
-  return isThis, isThat
-}
-
-if isThis, isThat := thisOrThat(); !(isThis || isThat) {}
-```
-
-I said we were getting silly, right? Let's "clean" it up though.
-
-```go
-// this is actually very okay with me
-isThisOrThat := func() bool {
-  isThis := a && b
-  isThat := c && d
-  return isThis || isThat
-}()
-
-if !isThisOrThat {}
-```
-
-That feels better, but doesn't solve all of the problems.
-
-What about:
-
-```go
-if func() bool {
-    isThis := a && b
-    isThat := c && d
-    return isThis || isThat
-  }() {}
-```
-
-**um, no. probably don't.**
-
-Consider scope, but more importantly, consider readability.
+Also don't overlook the power of the "tried and true" above. Be clever by being simple to understand and change.
