@@ -3,6 +3,7 @@
 I've been leaving a lot of code review comments asking for a boolean expression to be written in happy-path-form, then negated. Let's call it the _negated happy path form_. There's a few ways to do this.
 
 Consider the following expression:
+
 ```go
 if !a || !b || !c {
   return
