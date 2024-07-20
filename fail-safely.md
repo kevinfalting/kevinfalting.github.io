@@ -32,7 +32,7 @@ if user.State == Deleted {
 
 which is doomed to fail open. What happens when a new state is added? Yep, it's _implicitly_ allowed. Congratulations, the new `Purged` state is now allowed where `Deleted` was not.
 
-We can make it a little better by describing what we want to continue, and negating it. See also [Happy Path Expressions](./negated-happy-path-form.md).
+We can make it a little better by describing what we want to continue, and negating it. See also the [Negated Happy Path Form](./negated-happy-path-form.md).
 
 ```go
 if user.State != Active {
