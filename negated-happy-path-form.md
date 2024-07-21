@@ -1,6 +1,6 @@
 # Negated Happy Path Form
 
-I've been leaving a lot of code review comments asking for a boolean expression to be written in happy-path-form, then negated. Let's call it the _negated happy path form_. There's a few ways to do this.
+Using the _negated happy path form_ helps to write simpler to understand and change boolean expressions.
 
 Consider the following expression:
 
@@ -10,7 +10,7 @@ if !a || !b || !c {
 }
 ```
 
-versus
+compared to:
 
 ```go
 if !(a && b && c) {
@@ -18,7 +18,7 @@ if !(a && b && c) {
 }
 ```
 
-versus
+or:
 
 ```go
 happyPath := a && b && c
@@ -27,9 +27,19 @@ if !happyPath {
 }
 ```
 
-The second two are significantly simpler to understand and edit. They define the "happy path" then just negate it.
+The second two are significantly simpler to understand and edit. They define the ["happy path"](https://en.wikipedia.org/wiki/Happy_path) then just negate it.
 
-Of course there's always the tried and true:
+Depending on the complexity of the expression, switching between the second and third forms can be useful, even sometimes combining them.
+
+```go
+isThis := a && b
+isThat := c && d
+if !(isThis || isThat) {
+  return
+}
+```
+
+Of course there's always ol' reliable:
 
 ```go
 if !a {
@@ -45,16 +55,6 @@ if !c {
 }
 ```
 
-Depending on the complexity of the expression, I may go between the second and third forms, sometimes combining them.
-
-```go
-isThis := a && b
-isThat := c && d
-if !(isThis || isThat) {
-  return
-}
-```
-
 The point is to build the happy path expression and negate it. Think _"what condition(s) need to be true in order for execution to proceed?"_, then wrap that whole thing in parenthesis and negate it.
 
-Also don't overlook the power of the "tried and true" above. Be clever by being simple to understand and change.
+Not using the _negated happy path form_ does not help writing difficult to misunderstand and change boolean expressions...
