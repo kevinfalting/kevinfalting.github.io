@@ -18,7 +18,7 @@ if user.State == Deleted {
 }
 ```
 
-However, this is the kind of conditional which is doomed to fail open. What happens when a new state is added? Yep, it's _implicitly_ allowed. Congratulations, the new `Purged` state is passes where `Deleted` is blocked. There's nothing about the way it's written that considers all other potential values, including garbage!
+However, this is the kind of conditional which is doomed to fail open. What happens when a new state is added? Yep, it's _implicitly_ allowed. Congratulations, the new `Purged` state passes where `Deleted` is blocked. There's nothing about the way it's written that considers all other potential values, including garbage!
 
 We can make it better by thinking a little harder about the context of the action and recognizing that only active users should be able to perform it. Think about the happy path, then negate it. See also the [Negated Happy Path Form](./negated-happy-path-form.md). This now only allows active users and denies the rest.
 
