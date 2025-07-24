@@ -6,3 +6,4 @@ Formative influences.
 1. [Simple Made Easy](https://www.infoq.com/presentations/Simple-Made-Easy/)
 1. [Design in Practice](https://youtu.be/c5QF2HjHLSE)
 1. [Out of the Tar Pit](http://mng.bz/enzq)
+1. [Chesterton's Fence](https://fs.blog/chestertons-fence/)
